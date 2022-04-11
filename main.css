@@ -1,6 +1,6 @@
 body{
   background-color: white; line-height: 3vw;
-  margin: 0;  word-break: keep-all;
+  margin: 0;
   font-size: 1.6vw; font-family: Arial, sans-serif;
 }
 h2{
@@ -202,7 +202,7 @@ a{
     font-size: 20pt; margin-top: 8vw;
   }
   body{
-    line-height: 26pt; word-break: keep-all;
+    line-height: 26pt;
     font-size: 13pt; font-family: Arial, sans-serif;
   }
   .innerbox_left{
