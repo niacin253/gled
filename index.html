@@ -13,25 +13,6 @@
   <meta property="og:image;height" content="630">
 <title>Low Carbon Eco Diet</title>
 <link rel="stylesheet" type="text/css" href="main.css">
-<script>
-  var index = 0;   //이미지에 접근하는 인덱스
-  window.onload = function(){
-      slideShow();
-  }
-  function slideShow() {
-  var i;
-  var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
-  }
-  index++;
-  if (index > x.length) {
-      index = 1;  //인덱스가 초과되면 1로 변경
-  }
-  x[index-1].style.display = "block";  //해당 인덱스는 block으로
-  setTimeout(slideShow, 2500);
-}
-</script>
 </head>
 <body>
   <a href="index.html">
@@ -61,16 +42,37 @@
    <div class="content1">
     <div id="first">
       <div class="innerbox_left">
-       <img class="slide1" src="image/pesticide_640.jpg" style="width: 100%; height: auto;">
-       <img class="slide1" src="image/trucks_640.jpg" style="width: 100%; height: auto;">
-       <img class="slide1" src="image/waste_640.jpg" style="width: 100%; height: auto;">
+        <div class="slideshow-container">
+
+        <div class="mySlides">
+          <img src="image/pesticide_640.jpg" style="width:100%">
+          <div class="text">화학비료나 농약의 사용은 토양의 탄소 흡수 능력을 저하시킵니다.</div>
+        </div>
+
+        <div class="mySlides">
+          <img src="image/trucks_640.jpg" style="width:100%">
+          <div class="text">생산된 농식품의 이동거리에 따라 그만큼 또 탄소가 배출됩니다.</div>
+        </div>
+
+        <div class="mySlides">
+          <img src="image/waste_640.jpg" style="width:100%">
+          <div class="text">음식물 쓰레기로 인한 CO<sub>2</sub> 배출량이 연간 약 3억톤입니다.</div>
+        </div>
+
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
       </div>
       <div class="innerbox_left">
        <h3>온실가스 31%가 먹거리에서 발생</h3>
        기후위기가 매우 심각한 상황이라는게 잘 알려졌음에도, 온실가스 배출이 여전히 계속 증가하고 있습니다.
        그런데 FAO에 따르면 우리가 날마다 먹는 먹거리에서 전세계 온실가스의 31%가 발생한다고 합니다.
        항목별로 생산이 42%, 가공, 유통, 소비 등이 35%, 토지이용이 23% 입니다.
-       거기다 음식물 쓰레기로 인한 이산화탄소 배출량이 연간 약 3억톤이나 된다고 합니다.
+       거기다 음식물 쓰레기로 인한 CO<sub>2</sub> 배출량이 연간 약 3억톤이나 된다고 합니다.
        지구를 살리기 위해 먹거리 분야에서 탄소 배출을 줄이려면 어떡해야 할까요?
        <br><div id="br1"><br></div>
        <a href="crisis.html"><div class="more"><span>더 알아보기</span></div></a>
@@ -83,7 +85,7 @@
       </div>
       <div class="innerbox_right" style="color: white;">
         <h3>흙의 기능을 강조한 '흙의 날' 제정</h3>
-        토양에는 대기 중에 비해 5~6배의 탄소가 저장되어 있어,
+        토양에는 대기 중에 비해 5~6배의 탄소가 저장되어 있어서,
         탄소 중립을 이루기 위해서는 탄소를 흡수하고 저장하는
         흙의 기능이 매우 중요합니다. 유기물과 미생물을 많이 함유한 건강한
         흙이 탄소 격리 능력도 높기 때문에,
@@ -105,7 +107,7 @@
       <div>
         <div class="innerbox_left">
           <h3>저탄소 식생활 캠페인 추진</h3>
-          앞서 살펴 보았듯이 로컬푸드, 음식물 남기지 않기 등에 동참해서
+          흙의 가치와 관리의 필요성을 인정하고, 로컬푸드, 음식물 남기지 않기 등에 동참해서
           먹거리 분야의 생산-유통-소비 전 단계에서 탄소배출을 감축할 수 있는 '코리아 그린푸드데이'
           캠페인을 추진하게 되었습니다. 매월 하루, 지역에서 생산한 친환경 농산물로 만든 음식을
           남기지 않고 먹는 캠페인입니다.
@@ -142,5 +144,26 @@
     <div style="padding-left: 6vw; padding-top: 3vw;">
     한국농수산식품유통공사 / follow us Kakaotalk  facebook  instagram</div>
   </div>
+  <script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500);
+  }
+  </script>
 </body>
 </html>
