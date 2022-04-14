@@ -59,6 +59,13 @@ a{
   width: 60%; height: auto; margin-left: 20vw; margin-right: 20vw;
   text-align: justify;
 }
+.content2{
+  margin-top: 5vw; color: black; text-align: left;
+  z-index: 2; position: relative;
+  width: 80%; height: auto; margin-left: 10vw; margin-right: 10vw;
+  text-align: justify;
+}
+}
 .image_c{width: 60%; height: auto; margin-left: 20vw; margin-top: 5vw;}
 .image_i{width: 80%; height: auto; margin-left: 6vw; margin-top: 2vw;
   margin-bottom: 2vw;}
@@ -194,6 +201,11 @@ a{
     display: block;
   }
   .content1{
+    margin-top: 50px; color: black; text-align: left;
+    z-index: 2; position: relative;
+    width: 90%; height: auto; margin-left: 5vw; margin-right: 5vw;
+  }
+  .content2{
     margin-top: 50px; color: black; text-align: left;
     z-index: 2; position: relative;
     width: 90%; height: auto; margin-left: 5vw; margin-right: 5vw;

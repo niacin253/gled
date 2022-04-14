@@ -64,6 +64,22 @@ a{
   float:right; width: 42vw; height: auto; padding-right: 5vw;
   text-align: justify;
 }
+.innerbox{
+  width: 42vw; height: auto;
+  text-align: justify;
+  margin: 10vw 0 10vw 5vw; float: left;
+  float: left;
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.8); transition: 0.3s;
+}
+.innerbox:hover{
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.8);
+}
+.innerbox_content{
+  padding: 2vw;
+}
+.more_left{
+  display: inline-block; width: 64%; height: auto;
+}
 .more {
   color: rgb(0, 50, 0);
   text-align: center;
@@ -73,7 +89,7 @@ a{
   padding: 0px;
   width: 14vw;
   cursor: pointer;
-  float: right;
+  display: inline-block;
 }
 .more:after {
   content: ' \00bb';
@@ -240,7 +256,7 @@ a{
     text-shadow: -1px 0px 1px black;
   }
   h3{
-    font-size: 20pt; margin-top: 8vw;
+    font-size: 19pt; margin-top: 8vw;
   }
   body{
     line-height: 26pt;
@@ -253,6 +269,19 @@ a{
   .innerbox_right{
     float: none; width: 90%; height: auto; padding-left: 5vw;
   }
+  .innerbox{
+    float: none; width: 90%; height: auto; margin-left: 5vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8); transition: 0.3s;
+  }
+  .innerbox:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+  }
+  .innerbox_content{
+    padding: 0 15px 15px 15px;
+  }
+  .more_left{
+    display: inline-block; width: 53%; height: auto;
+  }
   .more {
     color: rgb(0, 50, 0);
     text-align: center;
@@ -262,7 +291,6 @@ a{
     padding: 0px;
     width: 180px;
     cursor: pointer;
-    float: right;
   }
   .more:after {
     content: ' \00bb';
