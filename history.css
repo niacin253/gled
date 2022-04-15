@@ -7,6 +7,30 @@ body {
   font-family: Helvetica, sans-serif;
 }
 h3 {font-size: 3vw; padding: 1vw 0; margin-top: 1vw;}
+h5{
+  font-size: 3vw; font-family: Arial, sans-serif;
+}
+#history_start{
+  width:80%; height: 20vw; max-width: 1000px;
+  background-color: white;
+  background-image: url(image/mozaic.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-size: 60%;
+  border-radius: 6px; margin-top: 10vw;
+  padding : 20px 30px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#history_connector1{
+  display: none;
+}
+.content_start{
+   font-size: 1.2em; line-height: 3.5vw;
+}
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -105,9 +129,25 @@ h3 {font-size: 3vw; padding: 1vw 0; margin-top: 1vw;}
   h3 {
     font-size: 30px; padding: 1vw 0; margin-top: 1vw;
   }
-
+  h5{
+    font-size: 17pt; margin-top: 0; margin-bottom: 10px;
+  }
+  #history_start{
+    width:90%; height: auto; max-width: 1000px; background-color: white;
+    border-radius: 6px;
+  }
+  .content_start{
+     font-size: 1em; line-height: 2em;
+  }
+  #history_connector1{
+    display: block;
+  }
+  #history_br{
+    display: none;
+  }
   .timeline::after {
   left: 31px;
+  top: -6px;
   }
 
   /* Full-width containers */
