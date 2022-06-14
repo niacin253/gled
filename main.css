@@ -3,13 +3,22 @@ body{
   margin: 0;
   font-size: 1.6vw; font-family: Arial, sans-serif;
 }
+h1{
+  font-size: 2.8vw; font-family: Arial, sans-serif;
+  margin-bottom: 1vw; line-height: 5vw;
+}
 h2{
   color: white; font-size: 2.3vw; font-family: Arial, sans-serif;
   position: absolute; top: 22vw; left: 58vw;
+  text-shadow: -1px 0px 1px black;
 }
 h3{
   font-size: 2.5vw; font-family: Arial, sans-serif;
   margin-top: 0.3vw; margin-bottom: 1.5vw;
+}
+h4{
+  font-size: 1.9vw; font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
 }
 a{
   text-decoration: none;
@@ -28,6 +37,7 @@ a{
 #slogan1{
   color: white; font-size: 6vw; font-family: Arial, sans-serif;
   position: absolute; top: 19vw; left: 20vw; font-weight: bold;
+  text-shadow: -1px 0px 1px black;
 }
 #slogan2{
   display: none;
@@ -35,11 +45,23 @@ a{
 #menu_grid{font-family: Arial, sans-serif; color: white; padding-top: 0.27vw;}
 #menu_grid2{
   font-family: Arial, sans-serif; color: black; padding-top: 0.7vw;
-  text-align: left;}
+  text-align: center;}
 .content1{
   margin-top: 10vw; color: black; text-align: left;
   z-index: 2; position: relative;
 }
+.content2{
+  margin-top: 5vw; color: black; text-align: left;
+  z-index: 2; position: relative;
+  width: 80%; height: auto; margin-left: 10vw; margin-right: 10vw;
+  text-align: justify;
+}
+.image_c{width: 60%; height: auto; margin-left: 20vw; margin-top: 5vw;}
+.image_i{width: 80%; height: auto; margin-left: 6vw; margin-top: 2vw;
+  margin-bottom: 2vw;}
+.video_i{width: 80%; height: 26.73vw; margin-left: 6vw; margin-top: 2vw;
+  margin-bottom: 2vw;}
+.video_m{width: 40vw; height: 26.73vw;}
 .text_center{text-align: center;}
 .center{left: 20vw;}
 .top_content{margin-top: 10vw;}
@@ -54,7 +76,13 @@ a{
   margin-left: 0.5vw; margin-right: 0.5vw;
 }
 #first_menu2{
-  margin-left: 5.5vw;
+  margin-left: -48vw;
+}
+#first_menu3{
+  margin-left: 5vw;
+}
+#first_menu4{
+  margin-left: 22vw;
 }
 .innerbox_left{
   float: left; width: 42vw; height: auto;
@@ -166,6 +194,9 @@ a{
 #br1{
   display: none;
 }
+#br2{
+  display: inline-block;
+}
 #second{
   background-image: url(image/soil2.png);
   background-repeat: no-repeat;
@@ -259,6 +290,16 @@ a{
   #first_menu2{
     margin-left: 3vw;
   }
+  #first_menu3{
+    margin-left: 23vw;
+  }
+  #first_menu4{
+    margin-left: 43vw;
+  }
+  h1{
+    font-size: 21px; font-family: Arial, sans-serif;
+    margin-bottom: 1px; line-height: 26pt;
+  }
   h2{
     color: white; font-size: 25px; font-family: Arial, sans-serif;
     position: absolute; top: 200px; left: 10vw;
@@ -266,6 +307,10 @@ a{
   }
   h3{
     font-size: 19pt; margin-top: 8vw;
+  }
+  h4{
+    font-size: 11pt; font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
   }
   body{
     line-height: 26pt;
@@ -359,9 +404,9 @@ a{
     right: 0;
   }
   #header{
-    background-image: url(image/salad3.jpg);
+    background-image: url(image/salad2.jpg);
     background-repeat: no-repeat;
-    background-position: -100px;
+    background-position: 0px;
     background-size: cover;
     width: 100%; height: 300px;
   }
@@ -379,6 +424,19 @@ a{
   }
   #br1{
     display: block;
+  }
+  #br2{
+    display: none;
+  }
+  .content1{
+    margin-top: 50px; color: black; text-align: left;
+    z-index: 2; position: relative;
+    width: 90%; height: auto; margin-left: 5vw; margin-right: 5vw;
+  }
+  .content2{
+    margin-top: 50px; color: black; text-align: left;
+    z-index: 2; position: relative;
+    width: 90%; height: auto; margin-left: 5vw; margin-right: 5vw;
   }
   #second{
     background-image: url(image/soil2.png);
@@ -398,7 +456,115 @@ a{
       margin-top: 15vw;
       float: left;
   }
+  .image_c{width: 90%; height: auto; margin-left: 5vw; margin-top: 5vw;}
+  .image_i{width: 90%; height: auto; margin-left: 5vw; margin-top: 5vw;}
+  .video_i{width: 90%; height: 44vw; margin-left: 5vw; margin-top: 0vw;}
   #bottom{
     font-size: 14px; height: 100px;
+  }
+}
+@media(min-width:1200px){
+  body{
+    line-height: 38px; font-size: 20px;
+  }
+  h1{
+    font-size: 32px; margin-bottom: 10px; line-height: 0px;
+  }
+  h2{
+    font-size: 39px; top: 220px; left: 56.5vw;
+  }
+  h3{
+    font-size: 2.5vw; margin-top: 0.3vw; margin-bottom: 1.5vw;
+  }
+  .menu{
+    height: 40px; font-size: 20px;
+  }
+  .menu2{
+    height: 40px; font-size: 20px;
+  }
+  #slogan1{
+    font-size: 100px; top: 170px; left: 0px;
+    width: 100%; text-align: center;
+  }
+  #menu_grid{
+    padding-top: 2px;
+  }
+  #menu_grid2{
+    padding-top: 2px;
+  }
+  .content1{
+    margin-top: 10vw;
+  }
+  .center{left: 20vw;}
+  .top_content{margin-top: 10vw;}
+  .max_width{max-width: 1200px;}
+  .each_menu{
+    padding-left: 30px; padding-right: 30px;
+    margin-left: 20px; margin-right: 20px;
+    padding-top: 10px; padding-bottom: 8px;
+  }
+  .each_menu2{
+    padding-left: 20px; padding-right: 20px; padding-bottom: 7px;
+    margin-left: 10px; margin-right: 10px;
+  }
+  #first_menu2{
+    margin-left: -35vw;
+  }
+  #first_menu4{
+    margin-left: 400px;
+  }
+  .innerbox_left{
+    width: 42vw; height: auto; padding-left: 5vw;
+  }
+  .innerbox_right{
+    width: 42vw; padding-right: 5vw;
+  }
+  .innerbox{
+    width: 42vw; height: auto;
+    margin: 10vw 0 10vw 5vw;
+  }
+  .innerbox_content{
+    padding: 2vw;
+  }
+  .more {
+    font-size: 1.7vw;
+    width: 14vw;
+  }
+  .more:after {
+    font-size: 3.4vw;
+    top: 0.25vw;
+  }
+  .more:hover span {
+    padding-right: 1.5vw;
+  }
+  .more_y {
+    font-size: 1.7vw;
+    width: 14vw;
+  }
+  .more_y:after {
+    font-size: 3.4vw;
+    top: 0.25vw;
+  }
+  .more_y:hover span {
+    padding-right: 1.5vw;
+  }
+  #header{
+    height: 350px;
+  }
+  #second{
+    margin-top: 7vw;
+    padding-top: 15vw;
+    padding-bottom: 10vw;
+  }
+  #third{
+      margin-top: 15vw;
+  }
+  #bottom{
+    height: 9vw; margin-top: 20vw; font-size: 1.5vw
+  }
+  /* Caption text */
+  .text {
+    font-size: 1.2vw;
+    padding-bottom: 1.5vw;
   }
 }

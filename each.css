@@ -1,31 +1,15 @@
-body{
-  background-color: white; line-height: 3vw;
-  margin: 0;
-  font-size: 1.6vw; font-family: Arial, sans-serif;
-}
-h1{
-  font-size: 2.8vw; font-family: Arial, sans-serif;
-  margin-bottom: 1vw; line-height: 5vw;
-}
+@media(min-width:790px){
 h2{
   color: white; font-size: 2vw; font-family: Arial, sans-serif;
   position: absolute; top: 0vw; left: 56vw; float:left;
-  text-shadow: -1px 0px 1px black;
-}
-h3{
-  font-size: 2.5vw; font-family: Arial, sans-serif;
-  margin-top: 0.3vw; margin-bottom: 1.5vw;
+  text-shadow: -1px 0px 1px black; line-height: 3vw;
 }
 h4{
   font-size: 1.9vw; font-family: Arial, sans-serif;
   margin: 0; padding: 0;
 }
-a{
-  text-decoration: none;
-  color: inherit;
-}
 #header{
-  background-image: url(image/salad3.jpg);
+  background-image: url(image/salad4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -33,205 +17,14 @@ a{
 }
 #slogan1{
   color: white; font-size: 3vw; font-family: Arial, sans-serif;
-  position: absolute; top: 1.4vw; left: 24vw; font-weight: bold;
-  float: left; text-shadow: -1px 0px 1px black;
+  position: absolute; top: 1.4vw; left: -10vw; font-weight: bold;
+  float: left; text-shadow: -1px 0px 1px black; text-align:center;
+  width: 100%; line-height: 3vw;
 }
-#slogan2{
-  display: none;
-}
-.menu{
-  background-color: rgb(0, 50, 0); height: 3.5vw;
-  font-size: 1.4vw; z-index: 3;
-}
-.menu2{
-  background-color: white; height: 4vw;
-  font-size: 1.4vw; z-index: 3;
-  border-bottom: solid gray 0.5px;
-  text-align: left;
-}
-#menu_grid{font-family: Arial, sans-serif; color: white; padding-top: 0.29vw;}
-#menu_grid2{
-  font-family: Arial, sans-serif; color: black; padding-top: 0.7vw;
-  text-align: left;}
 .content1{
   margin-top: 8vw; color: black; text-align: left;
   z-index: 2; position: relative;
   width: 60%; height: auto; margin-left: 20vw; margin-right: 20vw;
   text-align: justify;
 }
-.content2{
-  margin-top: 5vw; color: black; text-align: left;
-  z-index: 2; position: relative;
-  width: 80%; height: auto; margin-left: 10vw; margin-right: 10vw;
-  text-align: justify;
-}
-}
-.image_c{width: 60%; height: auto; margin-left: 20vw; margin-top: 5vw;}
-.image_i{width: 80%; height: auto; margin-left: 6vw; margin-top: 2vw;
-  margin-bottom: 2vw;}
-.video_i{width: 80%; height: 26.73vw; margin-left: 6vw; margin-top: 2vw;
-  margin-bottom: 2vw;}
-.video_m{width: 40vw; height: 26.73vw;}
-.text_center{text-align: center;}
-.center{left: 20vw;}
-.top_content{margin-top: 10vw;}
-.max_width{max-width: 1200px;}
-.each_menu{
-  padding-left: 2vw; padding-right: 2vw;
-  margin-left: 1.5vw; margin-right: 1.5vw;
-  padding-top: 1vw; padding-bottom: 1vw;
-}
-.each_menu2{
-  padding-left: 1.5vw; padding-right: 1.5vw; padding-bottom: 0.92vw;
-  margin-left: 0.5vw; margin-right: 0.5vw;
-}
-#first_menu2{
-  margin-left: 5.8vw;
-}
-#first_menu3{
-  margin-left: 33.2vw;
-}
-#first_menu4{
-  margin-left: 43.2vw;
-}
-.innerbox_left{
-  float: left; width: 42vw; height: auto;
-  padding-left: 5vw; text-align: justify;
-}
-.innerbox_right{
-  float:right; width: 42vw; height: auto; padding-right: 5vw;
-  text-align: justify;
-}
-#br1{
-  display: none;
-}
-#br2{
-  display: inline-block;
-}
-#second{
-  background-image: url(image/soil2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-top: 7vw;
-  float: left;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
-  width: 100%;
-}
-#bottom{
-  background-color: rgb(0, 15, 0); width: 100%; height: 9vw;
-  color: white; margin-top: 20vw;
-  font-family: Arial, sans-serif; font-size: 1.5vw
-}
-@media(max-width:790px){
-  .menu{
-    background-color: rgb(0, 50, 0); height: 40px;
-    top: 0; font-size: 15px; z-index: 3;
-  }
-  .menu2{
-    background-color: rgb(255, 255, 255); height: 41px;
-    top: 40px; font-size: 15px; z-index: 3;
-    border-bottom: solid gray 0.5px;
-  }
-  #menu_grid{
-    font-family: Arial, sans-serif; color: white; padding-top: 3.2px;
-  }
-  #menu_grid2{
-    font-family: Arial, sans-serif; color: black; padding-top: 0.7vw;
-    text-align: left;}
-  .each_menu{
-    padding-left: 1.5vw; padding-right: 1.5vw;
-    padding-top: 11.5px; padding-bottom: 11.5px;
-  }
-  .each_menu2{
-    padding-left: 1.5vw; padding-right: 1.5vw;
-    padding-bottom: 11px;
-  }
-  #first_menu2{
-    margin-left: 3vw;
-  }
-  #first_menu3{
-    margin-left: 23vw;
-  }
-  #first_menu4{
-    margin-left: 28vw;
-  }
-  h1{
-    font-size: 21px; font-family: Arial, sans-serif;
-    margin-bottom: 1px; line-height: 26pt;
-  }
-  h2{
-    color: white; font-size: 25px; font-family: Arial, sans-serif;
-    position: absolute; top: 200px; left: 10vw;
-    text-shadow: -1px 0px 1px black;
-  }
-  h3{
-    font-size: 20pt; margin-top: 8vw;
-  }
-  h4{
-    font-size: 11pt; font-family: Arial, sans-serif;
-    margin: 0; padding: 0;
-  }
-  body{
-    line-height: 26pt;
-    font-size: 13pt; font-family: Arial, sans-serif;
-  }
-  .innerbox_left{
-    float: none; width: 90%; height: auto;
-    padding-left: 5vw;
-  }
-  .innerbox_right{
-    float: none; width: 90%; height: auto; padding-left: 5vw;
-  }
-  #header{
-    background-image: url(image/salad3.jpg);
-    background-repeat: no-repeat;
-    background-position: -100px;
-    background-size: cover;
-    width: 100%; height: 300px;
-  }
-  #slogan1{
-    display: none;
-  }
-  #slogan2{
-    color: white; font-size: 60px; font-family: Arial, sans-serif;
-    position: absolute; top: 30px; left: 10vw; line-height: 60px;
-    font-weight: bold; display: block; text-shadow: -1px 0px 1px black;
-  }
-
-  #first{
-    padding-top: 7vw;
-  }
-  #br1{
-    display: inline-block;
-  }
-  #br2{
-    display: none;
-  }
-  .content1{
-    margin-top: 50px; color: black; text-align: left;
-    z-index: 2; position: relative;
-    width: 90%; height: auto; margin-left: 5vw; margin-right: 5vw;
-  }
-  .content2{
-    margin-top: 50px; color: black; text-align: left;
-    z-index: 2; position: relative;
-    width: 90%; height: auto; margin-left: 5vw; margin-right: 5vw;
-  }
-  #second{
-    background-image: url(soil2.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    padding-top: 30vw;
-    padding-bottom: 30vw;
-    margin-top: 15vw;
-  }
-  .image_c{width: 90%; height: auto; margin-left: 5vw; margin-top: 5vw;}
-  .image_i{width: 90%; height: auto; margin-left: 5vw; margin-top: 5vw;}
-  .video_i{width: 90%; height: 44vw; margin-left: 5vw; margin-top: 0vw;}
-  #bottom{
-    font-size: 14px; height: 100px;
-  }
 }
