@@ -280,11 +280,13 @@ a{
     font-family: Arial, sans-serif; color: black; padding-top: 0.7vw;
     text-align: left;}
   .each_menu{
-    padding-left: 1.5vw; padding-right: 1.5vw;
+    padding-left: 1vw; padding-right: 1vw;
+    margin-left: 1vw; margin-right: 1vw;
     padding-top: 11.5px; padding-bottom: 11.5px;
   }
   .each_menu2{
-    padding-left: 1.5vw; padding-right: 1.5vw;
+    padding-left: 1vw; padding-right: 1vw;
+    margin-left: 1vw; margin-right: 1vw;
     padding-bottom: 11px;
   }
   #first_menu2{
@@ -294,7 +296,7 @@ a{
     margin-left: 23vw;
   }
   #first_menu4{
-    margin-left: 43vw;
+    margin-left: 35vw;
   }
   h1{
     font-size: 21px; font-family: Arial, sans-serif;
@@ -306,7 +308,7 @@ a{
     text-shadow: -1px 0px 1px black;
   }
   h3{
-    font-size: 19pt; margin-top: 8vw;
+    font-size: 16pt; margin-top: 8vw;
   }
   h4{
     font-size: 11pt; font-family: Arial, sans-serif;
@@ -468,13 +470,16 @@ a{
     line-height: 38px; font-size: 20px;
   }
   h1{
-    font-size: 32px; margin-bottom: 10px; line-height: 0px;
+    font-size: 32px; margin-bottom: 30px; line-height: 0px;
   }
   h2{
     font-size: 39px; top: 220px; left: 56.5vw;
   }
   h3{
     font-size: 2.5vw; margin-top: 0.3vw; margin-bottom: 1.5vw;
+  }
+  h4{
+    font-size: 24px;
   }
   .menu{
     height: 40px; font-size: 20px;
